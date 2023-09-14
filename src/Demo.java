@@ -3,7 +3,7 @@ import java.sql.*;
 public class Demo {
     public static void main(String[] args) {
 
-        String basicQuery = "SELECT * FROM person limit 20";
+        String basicQuery = "SELECT * FROM person LIMIT 20";
         String url = "jdbc:mysql://localhost:3306/practice_db";
         String user = "root";
         String password = "my5q1P455w0rd";
