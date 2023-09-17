@@ -3,7 +3,7 @@ import java.sql.*;
 public class Demo {
     public static void main(String[] args) {
 
-        Person person = new Person("Jhon", "", "Leon",
+        Person person = new Person("John", "", "Leon",
                     "Rios", "hello1@gmail.com");
 
         String basicQuery = "SELECT * FROM person LIMIT 20";
