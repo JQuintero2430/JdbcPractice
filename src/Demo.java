@@ -3,18 +3,16 @@ import java.sql.*;
 public class Demo {
     public static void main(String[] args) {
 
-        String first_name = "Hector";
-        String second_name = "Ivan";
-        String first_lastname = "Figueroa";
-        String second_lastname = "";
-        String email = "hifdsc@hotmail.com";
+        Person person = new Person("Jhon", "", "Leon",
+                    "Rios", "hello1@gmail.com");
+
         String basicQuery = "SELECT * FROM person LIMIT 20";
         String addQuery = "INSERT INTO person (first_name, second_name, first_lastname, second_lastname, email) " +
-                          "VALUES ('" + first_name +
-                          "', '" + second_name +
-                          "', '" + first_lastname +
-                          "', '" + second_lastname +
-                          "', '" + email + "')";
+                          "VALUES ('" + person.getFirst_name() +
+                          "', '" + person.getSecond_name() +
+                          "', '" + person.getFirst_lastname() +
+                          "', '" + person.getSecond_lastname() +
+                          "', '" + person.getEmail() + "')";
         String url = "jdbc:mysql://localhost:3306/practice_db";
         String user = "root";
         String password = "my5q1P455w0rd";
