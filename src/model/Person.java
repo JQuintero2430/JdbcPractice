@@ -1,3 +1,5 @@
+package model;
+
 public class Person {
     private String first_name;
     private String second_name;

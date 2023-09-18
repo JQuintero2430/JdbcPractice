@@ -1,3 +1,8 @@
+package daoimpl;
+
+import dao.PersonDAO;
+import model.Person;
+
 import java.sql.*;
 
 public class PersonDAOImpl implements PersonDAO {
